@@ -1,0 +1,6 @@
+<div class="container">
+<h1>Scores for <%= @player.name %></h1>
+<% @games.each do |game| %>
+<p>Game <%=game.id%>: <%=game.score%> seconds</p>
+<% end %>
+</div>
